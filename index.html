@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Pokemon Game | Coding Blocks</title>
+        
+        <style>
+            #mycanvas{
+                border:5px solid orange;
+                background: url("Images/back1.jpg");
+                background-size: cover;
+            }
+            
+            #highscore{
+                visibility: hidden;
+                width: 1000px;
+            }
+
+            #scores{
+                text-align:justify;
+                color: antiquewhite;
+                background-color: black;
+                width: 1000px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="highscore">
+        localStorage.setItem("highestScore",0);
+        </div>
+      <div>
+  <span id="scores"></span>
+        </div>
+        
+  <canvas width="1000" height="600" id="mycanvas">
+     
+            </canvas>
+        
+        <script src="pokemon.js"></script>
+       
+        
+    </body>
+</html>
